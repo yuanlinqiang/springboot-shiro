@@ -18,7 +18,7 @@ public class DruidConfig {
 
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
         //登录查看信息的账号密码.
-
+        //druid可以设置反密码（数据库的链接密码）
         servletRegistrationBean.addInitParameter("loginUsername","admin");
 
         servletRegistrationBean.addInitParameter("loginPassword","123456");
